@@ -6,9 +6,9 @@ namespace SequenciaLimites
     {
         static void Main(string[] args)
         {
-            int  inicio ;
+            int inicio ;
 
-            int  fim ;
+            int fim ;
 
             Console.Write ("Inicio:");
             inicio = Convert.ToInt32 (Console.ReadLine());
@@ -23,14 +23,13 @@ namespace SequenciaLimites
                 Console.ResetColor ();
                 Console.WriteLine ("O número de inicio deve ser menor que o número de fim.");
             }
+            
+            while (inicio <= fim )
             {
-                while (inicio <= fim )
-                {
-                    Console.Write ($"{ inicio }");
-                    inicio = inicio  +  1 ;
-
-                 }
+                Console.Write ($"{ inicio }");
+                inicio = inicio  +  1 ;
             }
+            
         }
     }
 }
